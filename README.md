@@ -1,54 +1,55 @@
-# Data Structur Prosjekt / egen læring
+# Data Structure Project / Self Learning
 
-Dette prosjektet omhandler implementeringen av enkle datastrukturer ved hjelp av JavaScript. De inkluderte datastrukturene er Node, LinkedList og Stack.
+This project involves the implementation of simple data structures using JavaScript. The included data structures are Node, LinkedList, and Stack.
 
-## Innhold
+## Contents
 
 - [Node](#node)
 - [LinkedList](#linkedlist)
 - [Stack](#stack)
-- [Hvordan bruke](#hvordan-bruke)
-- [Eksempler](#eksempler)
+- [How to Use](#how-to-use)
+- [Examples](#examples)
 
 ## Node
 
-`Node`-klassen representerer en node i en enkel lenket liste. Den har følgende egenskaper og metoder:
+The `Node` class represents a node in a simple linked list. It has the following properties and methods:
 
-### Egenskaper
+### Properties
 
-- `data`: Inneholder verdien som lagres i noden.
-- `next`: Referanse til neste node i listen.
+- `data`: Contains the value stored in the node.
+- `next`: Reference to the next node in the list.
 
 ## LinkedList
 
-`LinkedList`-klassen representerer en lenket liste med noder. 
+The `LinkedList` class represents a linked list of nodes.
 
-### Egenskaper
+### Properties
 
-- `head`: Inneholder verdien som lagres i headnoden.
+- `head`: Contains the value stored in the head node.
 
-### Metoder
-- `addToHead` - Tar inn data som argument og lager en ny node som plasseres i front av listen.
-- `addToTail` - Tar inn data som argument og lager en ny node som plasseres bakerst i listen.
-- `removeHead` - Fjerner første noden i listen.
-- `removeTail` - Fjerner den siste noden i listen.
-- `printList` - Bygger og logger en string med nodene i listen, fra start til end.
+### Methods
 
+- `addToHead`: Takes data as an argument and creates a new node placed at the front of the list.
+- `addToTail`: Takes data as an argument and creates a new node placed at the end of the list.
+- `removeHead`: Removes the first node in the list.
+- `removeTail`: Removes the last node in the list.
+- `printList`: Builds and logs a string with the nodes in the list, from start to end.
 
 ## Stack
 
-`Stack` -klassen representerer en FILO stack basert på linkedlist med nodes.
+The `Stack` class represents a FILO stack based on a linked list of nodes.
 
-### Egenskaper
+### Properties
 
-- `stack`: Inneholder nyopprettet linkedlist.
-- `maxSize`: Inneholder numerisk verdi for maksstørrelsen på stacken, dersom ingenting er oppgitt defaulter den til Infinity.
-- `size`: Inneholder stackens nåværende størrelse, starter på 0.
+- `stack`: Contains the newly created linked list.
+- `maxSize`: Contains a numeric value for the maximum size of the stack; if nothing is provided, it defaults to Infinity.
+- `size`: Contains the current size of the stack, starting at 0.
 
-### Metoder
-- `push` - Tar inn data oppretter node og legger til toppen av stacken.
-- `pop` - Fjerner øverste elementet fra stacken.
-- `peek`- Returnerer data fra øverste noden i stacken.
-- `isEmpty` - Sjekker om stacken er tom, returnerer boolean true/false.
-- `hasRoom`- Sjekker om stacken er full, returnerer boolean true/false.
-- `printStack` - Printer en string med alle datene fra stacken front to end.
+### Methods
+
+- `push`: Takes data, creates a node, and adds it to the top of the stack.
+- `pop`: Removes the top element from the stack.
+- `peek`: Returns the data from the top node in the stack.
+- `isEmpty`: Checks if the stack is empty, returning a boolean true/false.
+- `hasRoom`: Checks if the stack is full, returning a boolean true/false.
+- `printStack`: Prints a string with all the data from the stack from front to end.
